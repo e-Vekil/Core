@@ -1,0 +1,43 @@
+﻿@model HomeProductViewModel
+<ul class="categories">
+    @foreach (CategoryLanguage category in Model.CategoryLanguages)
+    {
+        <div class="category-name col-12 p-0 py-3">
+            <div class="row">
+                <div class="col-10 d-flex align-items-center"><h4>@category.Name</h4></div>
+                <div class="col-2 d-flex align-items-center category-icon"><i class="fas fa-angle-down"></i></div>
+            </div>
+        </div>
+        <li class="sect wow fadeInRight category-item" id="@category.Name">
+            <article class="category">
+                <div class="container">
+                    <div class="row">
+                        <div class="mx-auto category-content category-bg" style="height:500px;background-image:url('images/@category.Category.PhotoPath');">
+                            <h1 class="category-title">@category.Name</h1>
+                        </div>
+                        <div class="category-features">
+                            <ul>
+                                @foreach (SubcategoryLanguage subcategory in Model.SubcategoryLanguages.Where(s => s.Subcategory.CategoryId == category.Id))
+                                {
+                                    <li>
+                                        <a asp-action="Document" asp-controller="Home">@subcategory.Name</a>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                        <div class=" mx-auto category-text">
+                            <p></p>
+                        </div>
+                        <div class="download-button d-flex align-items-center col-lg-12">
+                            <a asp-action="Document" asp-controller="Home">
+                                <span class="circle">
+                                </span>
+                                <p>Sənəd nümunələrini <br />buradan yükləyin</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </li>
+    }
+</ul>

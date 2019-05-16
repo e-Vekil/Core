@@ -1,0 +1,32 @@
+﻿@model List<CategoryLanguage>
+<aside class="side-bar">
+    <div class="side-bar-content">
+        <ul class="m-0">
+            <li>
+                <span class="close-icon"></span>
+            </li>
+            @if (ViewBag.Title == "Index")
+            {
+                <li>
+                    <a asp-action="Index" asp-controller="Home">@Localizer["Ana Səhifə"]</a>
+                </li>
+            }
+            @foreach (CategoryLanguage category in Model)
+            {
+                <li>
+                    <a href="#@category.Name">@category.Name</a>
+                </li>
+            }
+            <li>
+                <a href="#About">@Localizer["Haqqımızda"]</a>
+            </li>
+            <li>
+                <a href="#ContactUs">@Localizer["Əlaqə"]</a>
+            </li>
+
+            <li id="loginnav">
+                <a asp-action="Registration" asp-controller="Account">@Localizer["Daxil ol/Qeydiyyat"]</a>
+            </li>
+        </ul>
+    </div>
+</aside>
