@@ -27,7 +27,8 @@ C:\Users\Admin\source\repos\EvekilApp\EvekilApp\obj\Debug\netcoreapp2.1\EvekilAp
 C:\Users\Admin\source\repos\EvekilApp\EvekilApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_SelectLanguagePartial.g.cshtml.cs
 C:\Users\Admin\source\repos\EvekilApp\EvekilApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\SideBar\Default.g.cshtml.cs
 C:\Users\Admin\source\repos\EvekilApp\EvekilApp\bin\Debug\netcoreapp2.1\en\EvekilApp.resources.dll
-C:\Users\Admin\source\repos\EvekilApp\EvekilApp\obj\Debug\netcoreapp2.1\EvekilApp.Resources.Shared._Layout.en.resources
 C:\Users\Admin\source\repos\EvekilApp\EvekilApp\obj\Debug\netcoreapp2.1\EvekilApp.csproj.GenerateResource.cache
 C:\Users\Admin\source\repos\EvekilApp\EvekilApp\obj\Debug\netcoreapp2.1\en\EvekilApp.resources.dll
-C:\Users\Admin\source\repos\EvekilApp\EvekilApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\HomeProduct\Defautl.g.cshtml.cs
+C:\Users\Admin\source\repos\EvekilApp\EvekilApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\HomeProduct\Default.g.cshtml.cs
+C:\Users\Admin\source\repos\EvekilApp\EvekilApp\obj\Debug\netcoreapp2.1\EvekilApp.Resources.Views.Shared.Components.SideBar.Default.en.resources
+C:\Users\Admin\source\repos\EvekilApp\EvekilApp\obj\Debug\netcoreapp2.1\EvekilApp.Resources.Views.Home.Index.en.resources

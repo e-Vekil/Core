@@ -81,7 +81,7 @@ using Microsoft.AspNetCore.Mvc.Localization;
             WriteLiteral("                <li>\r\n                    ");
             EndContext();
             BeginContext(307, 72, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f5d2f7268aa447d692cc2d13f82c35b0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "07da40ef23bf4eb8b3ca6fd4c4a655d9", async() => {
                 BeginContext(352, 23, false);
 #line 11 "C:\Users\Admin\source\repos\EvekilApp\EvekilApp\Views\Shared\Components\SideBar\Default.cshtml"
                                                            Write(Localizer["Ana Səhifə"]);
@@ -175,7 +175,7 @@ WriteAttributeValue("", 545, category.Name, 545, 14, false);
             WriteLiteral("</a>\r\n            </li>\r\n\r\n            <li id=\"loginnav\">\r\n                ");
             EndContext();
             BeginContext(868, 90, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0278536954444d8a91780b20b24eb89b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5534943d349c4976a145dafc88f575b3", async() => {
                 BeginContext(923, 31, false);
 #line 28 "C:\Users\Admin\source\repos\EvekilApp\EvekilApp\Views\Shared\Components\SideBar\Default.cshtml"
                                                                  Write(Localizer["Daxil ol/Qeydiyyat"]);

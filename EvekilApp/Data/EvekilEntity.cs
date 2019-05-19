@@ -14,6 +14,7 @@ namespace EvekilApp.Data
 
         public virtual DbSet<Advocate> Advocates { get; set; }
         public virtual DbSet<CardType> CardTypes { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<CategoryLanguage> CategoryLanguages { get; set; }
         public virtual DbSet<Comment> Comments { get; set; }
         public virtual DbSet<Connect> Connects { get; set; }
