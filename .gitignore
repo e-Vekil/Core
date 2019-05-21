@@ -14,6 +14,8 @@
 
 appsettings.json
 /EvekilApp/appsettings.json
+/EvekilApp/obj/
+/EvekilApp/bin/
 
 # Build results
 [Dd]ebug/
