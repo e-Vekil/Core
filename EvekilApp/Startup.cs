@@ -21,6 +21,7 @@ namespace EvekilApp
 {
     public class Startup
     {
+        // This method gets called by the runtime. Use this method to add services to the container.
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -28,22 +29,24 @@ namespace EvekilApp
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-
-            //add db context
+            #region DbContext
             services.AddDbContext<EvekilEntity>(option =>
             {
                 option.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]);
             });
+            #endregion
 
+            #region Session
+            services.AddDistributedMemoryCache();
+            services.AddSession(options => {
+                options.IdleTimeout = TimeSpan.FromMinutes(15);//You can set Time  
+                options.Cookie.MaxAge = TimeSpan.FromMinutes(15);
+            });
+            #endregion
 
-            //configure session
-            services.AddSession();
-
-            //multilanguage
+            #region MultiLanguage
             services.Configure<RequestLocalizationOptions>(options =>
             {
                 var supportedCultures = new[]
@@ -55,8 +58,8 @@ namespace EvekilApp
                 options.DefaultRequestCulture = new RequestCulture(culture: supportedCultures[0], uiCulture: supportedCultures[0]);
                 options.SupportedCultures = supportedCultures;
                 options.SupportedUICultures = supportedCultures;
-
             });
+            #endregion
 
             //add identity
             services.AddIdentity<User, IdentityRole>().AddDefaultTokenProviders().AddEntityFrameworkStores<EvekilEntity>();
